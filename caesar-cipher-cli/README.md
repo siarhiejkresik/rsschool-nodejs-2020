@@ -19,3 +19,8 @@ The programm accepts 4 options (short alias and full name):
 3.  **-o, --output**: an output file  (default: stdout)
 4.  **-a, --action**: an action (encode/decode)
 
+## Examples
+
+`$ echo "AaBbZz012=+" | node caesar-cipher-cli -a encode -s 2
+`  
+`$ CcDdBb012=+`
