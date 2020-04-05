@@ -1,6 +1,22 @@
-const getAll = async () => {
-  // TODO: mock implementation. should be replaced during task development
-  return [];
-};
+const MemoryDb = require('../../repositories/memory');
 
-module.exports = { getAll };
+class Users extends MemoryDb {}
+
+const data = [
+  {
+    id: '1',
+    name: 'user',
+    login: 'login1',
+    password: 'password1'
+  },
+  {
+    id: '2',
+    name: 'user',
+    login: 'login2',
+    password: 'password2'
+  }
+];
+
+const users = new Users(data);
+
+module.exports = users;
